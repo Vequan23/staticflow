@@ -1,0 +1,24 @@
+{
+  "name": "staticflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "start": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-mustache": "^5.0.0",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "postcss-import-ext-glob": "^2.0.1",
+    "postcss-nested": "^5.0.6"
+  }
+}

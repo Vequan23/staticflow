@@ -1,0 +1,11 @@
+.c-card {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  max-width: 20rem;
+  border-radius: 5px;
+}
+
+  .c-card__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
