@@ -1,24 +1,42 @@
-import { flows, basePath, baseExtension } from "./flows.js";
+import { components, basics, pages, basePath, baseExtension } from "./flows.js";
 
 const flowMenu = () => {
   const init = () => {
     createMenu();
+    injectStyleTag();
   };
 
   const createMenu = () => {
     const HTML = `
-      <div class="staticflow-c-flow-menu">
-        ${createFlows()}
+      <div class="c-flow-menu">
+        <div class="c-menu__item-container">
+          <p>Basics</p>
+          <div class="c-menu__item-link-container">
+              ${createFlowMenuItems(basics)}
+          </div>
+        </div>
+        <div class="c-menu__item-container">
+          <p>Components</p>
+          <div class="c-menu__item-link-container">
+            ${createFlowMenuItems(components)}
+          </div>
+        </div>
+        <div class="c-menu__item-container">
+          <p>Pages</p>
+          <div class="c-menu__item-link-container">
+            ${createFlowMenuItems(pages)}
+          </div>
+        </div>
       </div>
     `;
     injectMenu(HTML);
   };
 
-  const createFlows = () => {
+  const createFlowMenuItems = (items) => {
     let HTML = "";
 
-    flows.map(({ name, type, path }) => {
-      HTML += `<a href="${basePath}${path}${baseExtension}"  style="${createStyles()}" class=staticflow-c-flow-menu__link>${name}</a>`;
+    items.map(({ name, type, path }) => {
+      HTML += `<a href="${basePath}${path}${baseExtension}" class=c-flow-menu__link>${name}</a>`;
     });
 
     return HTML;
@@ -28,15 +46,9 @@ const flowMenu = () => {
     document.body.insertAdjacentHTML("afterbegin", HTML);
   };
 
-  const createStyles = () => {
-    return `display: block; 
-            margin: .5rem 0;
-            font-size: .95rem;
-            font-weight: 600;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase
-            `;
+  const injectStyleTag = () => {
+    document.querySelector("head").innerHTML +=
+      '<link rel="stylesheet" href="../../css/staticflow.css" type="text/css"/>';
   };
 
   init();

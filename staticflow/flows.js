@@ -1,4 +1,4 @@
-const basePath = "../";
+const basePath = "../../";
 const baseExtension = ".html";
 
 const types = {
@@ -7,17 +7,27 @@ const types = {
   pages: "pages",
 };
 
-const flows = [
+const components = [
   {
     name: "card",
     type: types.components,
-    path: `card/card`,
+    path: "components/card/card",
   },
   {
     name: "header",
     type: types.components,
-    path: `header/header`,
+    path: "components/header/header",
   },
 ];
 
-export { flows, basePath, baseExtension };
+const basics = [
+  {
+    name: "button",
+    type: types.basics,
+    path: "basics/button/button",
+  },
+];
+
+const pages = [];
+
+export { components, basics, pages, basePath, baseExtension };

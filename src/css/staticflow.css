@@ -1,0 +1,44 @@
+.c-flow-menu {
+  background: black;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.c-menu__item-container {
+  margin: 0 1rem;
+  position: relative;
+
+  & p {
+    color: white;
+  }
+
+  & .c-menu__item-link-container {
+    display: none;
+  }
+
+  &:hover {
+    & .c-menu__item-link-container {
+      position: absolute;
+      display: block;
+      background: black;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+.c-flow-menu__link {
+  color: white;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

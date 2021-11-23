@@ -24,6 +24,19 @@
     margin-bottom: 1rem;
   }
 
+.c-header {
+  background: var(--color-lightblue);
+  padding: 1rem;
+}
+
+.c-header__list {
+    display: flex;
+  }
+
+.c-header__list-item {
+    margin: 0 0.5rem;
+  }
+
 html,
 body,
 div,
@@ -156,7 +169,8 @@ table {
 }
 
 :root {
-  --primary: red;
+  --color-primary: red;
+  --color-lightblue: lightskyblue;
 }
 
 :root {

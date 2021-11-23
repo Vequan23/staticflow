@@ -1,5 +1,5 @@
 const card = () => {
-  alert("DYNAMICALLY LOADED");
+  console.log("DYNAMICALLY LOADED CARD JS");
 };
 
 export default card();
