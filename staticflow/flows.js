@@ -28,6 +28,11 @@ const basics = [
   },
 ];
 
-const pages = [];
+const pages = [
+  {
+    name: "Example",
+    path: "pages/example/example",
+  },
+];
 
 export { components, basics, pages, basePath, baseExtension };
