@@ -1,4 +1,5 @@
 {
+  "devMode": true,
   "card__title": "Title",
   "card__buttonTitle": "Card Button"
 }
