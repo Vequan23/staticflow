@@ -1,5 +1,7 @@
+import moduleInjector from "./utils/moduleInjector.js";
+
 const main = () => {
-  console.log("LOADED");
+  moduleInjector();
 };
 
 main();
