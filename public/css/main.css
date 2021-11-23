@@ -1,3 +1,13 @@
+.c-button {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+  .c-button:hover {
+    cursor: pointer;
+  }
+
 .c-card {
   padding: 2rem;
   box-shadow: var(--box-shadow);
@@ -5,8 +15,12 @@
   border-radius: 5px;
 }
 
-  .c-card__title {
+.c-card__title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+.c-card__description {
     margin-bottom: 1rem;
   }
 

@@ -1,5 +1,5 @@
 const main = () => {
-  console.log("YOOOO");
+  console.log("LOADED");
 };
 
 main();
