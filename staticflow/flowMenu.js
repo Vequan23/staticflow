@@ -1,4 +1,4 @@
-import { components, basics, pages, basePath, baseExtension } from "./flows.js";
+import { components, basics, pages, basePath, baseExtension } from "../staticflow.config.js";
 
 const flowMenu = () => {
   const init = () => {
@@ -34,7 +34,7 @@ const flowMenu = () => {
   const createFlowMenuItems = (items) => {
     let HTML = "";
 
-    items.map(({ name, type, path }) => {
+    items.map(({ name, path }) => {
       HTML += `<a href="${basePath}${path}${baseExtension}" class=c-flow-menu__link>${name}</a>`;
     });
 

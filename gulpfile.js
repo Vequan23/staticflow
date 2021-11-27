@@ -12,6 +12,7 @@ const cleanJs = () => del(["public/js"]);
 const cleanHTML = () => del(["public/*.html"]);
 const cleanMustache = () => del(["public/*.mustache"]);
 const css = () => src("src/css/**/*.css").pipe(postcss()).pipe(dest("./public/css"));
+
 const javascript = () => {
   return src("src/js/**/*.js")
     .pipe(webpack(require("./webpack.config.js"), compiler, function () {}))

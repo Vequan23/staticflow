@@ -24,9 +24,7 @@
     "postcss-import": "^14.0.2",
     "postcss-import-ext-glob": "^2.0.1",
     "postcss-nested": "^5.0.6",
-    "webpack": "^5.64.4"
-  },
-  "dependencies": {
+    "webpack": "^5.64.4",
     "webpack-stream": "^7.0.0"
   }
 }

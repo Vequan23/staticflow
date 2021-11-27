@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("DYNAMICALLY LOADED CARD JS")})();

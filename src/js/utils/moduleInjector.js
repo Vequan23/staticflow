@@ -2,7 +2,7 @@ const moduleInjector = () => {
   const basePath = "../../js/";
   const elsWithModule = document.querySelectorAll("[data-module]");
   const elsWithModuleArray = Array.from(elsWithModule);
-  const fileSuffix = ".js";
+  const fileSuffix = "-bundle.js";
 
   const init = () => {
     elsWithModuleArray.forEach((element) => {

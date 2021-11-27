@@ -1,0 +1,1 @@
+(()=>{"use strict";var e;e=document.querySelectorAll("[data-module]"),Array.from(e).forEach((function(e){if(e){var c=e.dataset.module,t=document.createElement("script");t.type="module",t.src="".concat("../../js/").concat(c).concat("-bundle.js"),t.async=!0,t.dataset.cfasync="false",document.body.appendChild(t)}}))})();

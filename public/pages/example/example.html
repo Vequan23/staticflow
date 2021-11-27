@@ -16,10 +16,32 @@
 
   
 <!-- endinject -->
+
+<!-- inject:head:mustache -->
+  
+<!-- endinject -->
 <div class='c-header'>
     <ul class='c-header__list'>
         <li class='c-header__list-item'>Home</li>
         <li class='c-header__list-item'>About</li>
         <li class='c-header__list-item'>Contact</li>
     </ul>
-</div>
+</div><div>
+  <h1 class="title">Example Page</h1>
+  <!-- inject:head:mustache -->
+    
+  <!-- endinject -->
+    <div data-module="card" class="c-card">
+      <p class="c-card__title">Title</p>
+      <p class="c-card__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas fugit nesciunt quas architecto quo quae illum
+        ipsam.
+      </p>
+      <button class='c-button'>Card Button</button>
+    </div>
+  <!-- inject:head:mustache -->
+    
+  <!-- endinject -->
+  <div class="c-banner">
+    Hello. I am a banner!
+  </div></div>
