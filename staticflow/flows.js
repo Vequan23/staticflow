@@ -18,6 +18,11 @@ const components = [
     type: types.components,
     path: "components/header/header",
   },
+  {
+    name: "banner",
+    type: types.components,
+    path: "components/banner/banner",
+  },
 ];
 
 const basics = [

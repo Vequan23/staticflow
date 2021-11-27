@@ -3,7 +3,6 @@ import { components, basics, pages, basePath, baseExtension } from "./flows.js";
 const flowMenu = () => {
   const init = () => {
     createMenu();
-    injectStyleTag();
   };
 
   const createMenu = () => {
@@ -44,11 +43,6 @@ const flowMenu = () => {
 
   const injectMenu = (HTML) => {
     document.body.insertAdjacentHTML("afterbegin", HTML);
-  };
-
-  const injectStyleTag = () => {
-    document.querySelector("head").innerHTML +=
-      '<link rel="stylesheet" href="../../css/staticflow.css" type="text/css"/>';
   };
 
   init();

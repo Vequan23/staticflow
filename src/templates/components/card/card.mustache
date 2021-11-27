@@ -1,9 +1,11 @@
-{{> ../../config/head }}
-<div data-module="card" class="c-card">
-  <p class="c-card__title">{{ card__title }}</p>
-  <p class="c-card__description">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas fugit nesciunt quas architecto quo quae illum
-    ipsam nam!
-  </p>
-  <button class='c-button'>{{ card__buttonTitle }}</button>
-</div>
+<!-- inject:head:mustache -->
+  
+<!-- endinject -->
+  <div data-module="card" class="c-card">
+    <p class="c-card__title">{{ card__title }}</p>
+    <p class="c-card__description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas fugit nesciunt quas architecto quo quae illum
+      ipsam.
+    </p>
+    <button class='c-button'>{{ card__buttonTitle }}</button>
+  </div>

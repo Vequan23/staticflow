@@ -1,5 +1,5 @@
 const moduleInjector = () => {
-  const basePath = "../../js/components/";
+  const basePath = "../../js/";
   const elsWithModule = document.querySelectorAll("[data-module]");
   const elsWithModuleArray = Array.from(elsWithModule);
   const fileSuffix = ".js";
