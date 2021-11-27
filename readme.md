@@ -4,6 +4,9 @@ Staticflow provides a springboard for building out static components and pages w
 
 It can be configured to do whatever you need it to do but out of the box, it's great for simply building plain HTML, CSS and Javascript.
 
+<img width="1279" alt="Screen Shot 2021-11-27 at 1 56 00 PM" src="https://user-images.githubusercontent.com/19369622/143720834-86d685a1-1924-45d0-b8e7-e51a89d74e49.png">
+
+
 # Getting Started
 
 To get get started, download our latest release and run `npm install` then `npm start`.
