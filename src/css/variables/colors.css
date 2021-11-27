@@ -1,4 +1,7 @@
 :root {
-  --color-primary: red;
   --color-lightblue: lightskyblue;
+  --color-darkblue: #34495e;
+  
+  --color-white: white;
+  --color-black: black;
 }

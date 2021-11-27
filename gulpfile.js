@@ -22,9 +22,9 @@ const javascript = () => {
 const html = () => src("./src/*.html").pipe(dest("./public"));
 
 const handleMustache = () => {
-  return src("./src/templates/**/*.mustache")
+  return src("./src/flows/**/*.mustache")
     .pipe(
-      inject(src(["./src/templates/config/head.mustache"]), {
+      inject(src(["./src/flows/config/head.mustache"]), {
         starttag: "<!-- inject:head:mustache -->",
         transform: function (filePath, file) {
           return file.contents.toString("utf8");
@@ -32,7 +32,7 @@ const handleMustache = () => {
       })
     )
     .pipe(
-      mustache("./src/templates/data.json", {
+      mustache("./src/flows/data.json", {
         extension: ".html",
       })
     )
@@ -47,7 +47,7 @@ const watchFiles = () => {
   watch("./src/css/**/*.css", series(cleanCss, css));
   watch("./src/js/**/*.js", series(cleanJs, javascript));
   watch("./src/*.html", series(cleanHTML, html));
-  watch("./src/templates/**/*.mustache", series(cleanMustache, handleMustache));
+  watch("./src/flows/**/*.mustache", series(cleanMustache, handleMustache));
 };
 
 exports.css = css;

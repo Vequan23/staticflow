@@ -1,1 +1,1 @@
-.c-banner{background:grey;font-weight:700;opacity:.75;padding:1rem}
+.c-banner{background:var(--color-darkblue);border-radius:5px;color:var(--color-white);font-weight:700;margin-bottom:2rem;padding:1rem}

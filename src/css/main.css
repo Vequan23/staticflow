@@ -5,3 +5,10 @@
   font-weight: bolder;
   margin-bottom: 2rem;
 }
+
+
+.l-container {
+  max-width: 70rem;
+  padding: 1rem;
+  margin: 0 auto;
+}

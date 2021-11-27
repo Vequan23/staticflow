@@ -3,6 +3,7 @@
   box-shadow: var(--box-shadow);
   max-width: 20rem;
   border-radius: 5px;
+  margin-bottom: 2rem;
 
   &__title {
     font-size: 2rem;

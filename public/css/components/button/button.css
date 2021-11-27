@@ -1,1 +1,1 @@
-.c-button{border:none;border-radius:5px;padding:1rem}.c-button:hover{cursor:pointer}
+.c-button{background:var(--color-darkblue);border:none;border-radius:5px;color:var(--color-white);padding:1rem}.c-button:hover{cursor:pointer}

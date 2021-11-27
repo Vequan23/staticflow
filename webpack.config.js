@@ -1,10 +1,11 @@
 const path = require("path");
+const basePath = "./src/js/";
 
 module.exports = {
   mode: "production",
   entry: {
-    main: "./src/js/main.js",
-    card: "./src/js/components/card.js",
+    main: `${basePath}main.js`,
+    card: `${basePath}components/card.js`,
   },
   output: {
     filename: "[name]-bundle.js",
